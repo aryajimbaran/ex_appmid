@@ -1,0 +1,13 @@
+2016-04-21 13:49:06.706 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-21 13:50:38.743 [WARN ] com.zaxxer.hikari.pool.PoolBase "springHikariCP - Failed to validate connection com.mysql.jdbc.JDBC4Connection@4cb2918c (Communications link failure
+
+The last packet successfully received from the server was 896,230 milliseconds ago.  The last packet sent successfully to the server was 2 milliseconds ago.)"
+2016-04-21 13:50:38.749 [WARN ] com.zaxxer.hikari.pool.PoolBase "springHikariCP - Failed to validate connection com.mysql.jdbc.JDBC4Connection@c2584d3 (Communications link failure
+
+The last packet successfully received from the server was 865,747 milliseconds ago.  The last packet sent successfully to the server was 1 milliseconds ago.)"
+2016-04-21 13:50:38.755 [WARN ] com.zaxxer.hikari.pool.PoolBase "springHikariCP - Failed to validate connection com.mysql.jdbc.JDBC4Connection@37468787 (Communications link failure
+
+The last packet successfully received from the server was 865,609 milliseconds ago.  The last packet sent successfully to the server was 1 milliseconds ago.)"
+2016-04-21 13:50:38.760 [WARN ] com.zaxxer.hikari.pool.PoolBase "springHikariCP - Failed to validate connection com.mysql.jdbc.JDBC4Connection@714f3da4 (Communications link failure
+
+The last packet successfully received from the server was 865,429 milliseconds ago.  The last packet sent successfully to the server was 1 milliseconds ago.)"

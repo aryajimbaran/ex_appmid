@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout>
+				<pattern>
+					%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] %c "%m"%n
+				</pattern>
+			</PatternLayout>
+		</Console>		
+		<RollingFile name="app-log" fileName="log/app.log" filePattern="log/app_%d{yyyyMMddhh}_%i.log">
+			<PatternLayout>
+				<pattern>
+					%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] %c "%m"%n
+				</pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true" />
+				<SizeBasedTriggeringPolicy size="50MB" />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="err-log" fileName="log/err.log" filePattern="log/err_%d{yyyyMMddhh}_%i.log">
+			<PatternLayout>
+				<pattern>
+					%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] %c "%m"%n
+				</pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true" />
+				<SizeBasedTriggeringPolicy size="50MB" />
+			</Policies>
+		</RollingFile>
+
+	</Appenders>
+	<Loggers>
+		<root level="INFO">
+			<!-- <appender-ref ref="Console" level="INFO" />
+			<appender-ref ref="app-log" level="INFO" /> -->
+			<appender-ref ref="err-log" level="ERROR" />
+		</root>		
+	</Loggers>
+</Configuration>

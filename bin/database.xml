@@ -1,0 +1,30 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/jdbc 
+		http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd">
+	
+	<bean id="systemDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.hsqldb.jdbcDriver" />
+		<property name="url" value="jdbc:hsqldb:mem:." />
+		<property name="username" value="sa" />
+		<property name="password" value="" />
+	</bean>
+		
+	<bean id="targetDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://103.16.199.108:3307/litebigc_dev" />
+		<property name="username" value="litebigc_devadm" />
+		<property name="password" value="lBdeV@8#$!_" />
+	</bean>
+		
+	<bean id="transactionManager" class="org.springframework.batch.support.transaction.ResourcelessTransactionManager" />	
+	
+	<jdbc:initialize-database data-source="systemDataSource">
+		<jdbc:script location="org/springframework/batch/core/schema-drop-hsqldb.sql" />
+		<jdbc:script location="org/springframework/batch/core/schema-hsqldb.sql" />		
+	</jdbc:initialize-database>
+	
+</beans>

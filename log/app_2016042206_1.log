@@ -1,0 +1,328 @@
+2016-04-22 18:05:02.364 [INFO ] org.springframework.context.support.ClassPathXmlApplicationContext "Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@50f6ac94: startup date [Fri Apr 22 18:05:02 WIB 2016]; root of context hierarchy"
+2016-04-22 18:05:02.442 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [job-definition.xml]"
+2016-04-22 18:05:02.614 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [context.xml]"
+2016-04-22 18:05:02.652 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [database.xml]"
+2016-04-22 18:05:02.682 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'transactionManager': replacing [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context.xml]] with [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [database.xml]]"
+2016-04-22 18:05:02.751 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'robust-export': replacing [Generic bean: class [org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.batch.core.configuration.xml.JobParserJobFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]"
+2016-04-22 18:05:03.149 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7cbc3762: defining beans [jobRepository,transactionManager,jobLauncher,systemDataSource,targetDataSource,org.springframework.jdbc.datasource.init.DataSourceInitializer#0,checkFileTask,createFileTask,continueTask,org.springframework.batch.core.scope.internalStepScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,initialization-step,createFileStep,continue-step,robust-export]; root of factory hierarchy"
+2016-04-22 18:05:03.235 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: org.hsqldb.jdbcDriver"
+2016-04-22 18:05:03.487 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "No TaskExecutor has been set, defaulting to synchronous executor."
+2016-04-22 18:05:03.489 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: com.mysql.jdbc.Driver"
+2016-04-22 18:05:04.105 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql]"
+2016-04-22 18:05:04.111 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql] in 5 ms."
+2016-04-22 18:05:04.111 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql]"
+2016-04-22 18:05:04.134 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql] in 23 ms."
+2016-04-22 18:05:04.327 [INFO ] com.zaxxer.hikari.HikariDataSource "springHikariCP - Started."
+2016-04-22 18:08:34.141 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "Job: [FlowJob: [name=robust-export]] launched with the following parameters: [{date=1461323312885, maxThread=2}]"
+2016-04-22 18:08:34.226 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:09:02.351 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:11:08.538 [INFO ] org.springframework.context.support.ClassPathXmlApplicationContext "Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3e2055d6: startup date [Fri Apr 22 18:11:08 WIB 2016]; root of context hierarchy"
+2016-04-22 18:11:08.588 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [job-definition.xml]"
+2016-04-22 18:11:08.786 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [context.xml]"
+2016-04-22 18:11:08.834 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [database.xml]"
+2016-04-22 18:11:08.864 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'transactionManager': replacing [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context.xml]] with [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [database.xml]]"
+2016-04-22 18:11:08.954 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'robust-export': replacing [Generic bean: class [org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.batch.core.configuration.xml.JobParserJobFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]"
+2016-04-22 18:11:09.197 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5553d0f5: defining beans [jobRepository,transactionManager,jobLauncher,systemDataSource,targetDataSource,org.springframework.jdbc.datasource.init.DataSourceInitializer#0,checkFileTask,createFileTask,continueTask,org.springframework.batch.core.scope.internalStepScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,initialization-step,createFileStep,continue-step,robust-export]; root of factory hierarchy"
+2016-04-22 18:11:09.247 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: org.hsqldb.jdbcDriver"
+2016-04-22 18:11:09.597 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "No TaskExecutor has been set, defaulting to synchronous executor."
+2016-04-22 18:11:09.599 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: com.mysql.jdbc.Driver"
+2016-04-22 18:11:10.121 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql]"
+2016-04-22 18:11:10.128 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql] in 7 ms."
+2016-04-22 18:11:10.129 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql]"
+2016-04-22 18:11:10.143 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql] in 14 ms."
+2016-04-22 18:11:10.359 [INFO ] com.zaxxer.hikari.HikariDataSource "springHikariCP - Started."
+2016-04-22 18:11:41.998 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "Job: [FlowJob: [name=robust-export]] launched with the following parameters: [{date=1461323500757, maxThread=2}]"
+2016-04-22 18:11:42.026 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:11:46.392 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:19:16.167 [INFO ] org.springframework.context.support.ClassPathXmlApplicationContext "Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3e2055d6: startup date [Fri Apr 22 18:19:16 WIB 2016]; root of context hierarchy"
+2016-04-22 18:19:16.220 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [job-definition.xml]"
+2016-04-22 18:19:16.373 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [context.xml]"
+2016-04-22 18:19:16.421 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [database.xml]"
+2016-04-22 18:19:16.456 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'transactionManager': replacing [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context.xml]] with [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [database.xml]]"
+2016-04-22 18:19:16.509 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'robust-export': replacing [Generic bean: class [org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.batch.core.configuration.xml.JobParserJobFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]"
+2016-04-22 18:19:16.692 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6d23017e: defining beans [jobRepository,transactionManager,jobLauncher,systemDataSource,targetDataSource,org.springframework.jdbc.datasource.init.DataSourceInitializer#0,checkFileTask,createFileTask,continueTask,org.springframework.batch.core.scope.internalStepScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,initialization-step,createFileStep,continue-step,robust-export]; root of factory hierarchy"
+2016-04-22 18:19:16.736 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: org.hsqldb.jdbcDriver"
+2016-04-22 18:19:17.023 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "No TaskExecutor has been set, defaulting to synchronous executor."
+2016-04-22 18:19:17.024 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: com.mysql.jdbc.Driver"
+2016-04-22 18:19:17.472 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql]"
+2016-04-22 18:19:17.477 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql] in 5 ms."
+2016-04-22 18:19:17.478 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql]"
+2016-04-22 18:19:17.494 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql] in 16 ms."
+2016-04-22 18:19:17.670 [INFO ] com.zaxxer.hikari.HikariDataSource "springHikariCP - Started."
+2016-04-22 18:19:26.510 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "Job: [FlowJob: [name=robust-export]] launched with the following parameters: [{date=1461323966389, maxThread=2}]"
+2016-04-22 18:19:26.553 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:19:37.922 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:20:16.335 [INFO ] org.springframework.context.support.ClassPathXmlApplicationContext "Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3e2055d6: startup date [Fri Apr 22 18:20:16 WIB 2016]; root of context hierarchy"
+2016-04-22 18:20:16.384 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [job-definition.xml]"
+2016-04-22 18:20:16.548 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [context.xml]"
+2016-04-22 18:20:16.595 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [database.xml]"
+2016-04-22 18:20:16.643 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'transactionManager': replacing [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context.xml]] with [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [database.xml]]"
+2016-04-22 18:20:16.724 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'robust-export': replacing [Generic bean: class [org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.batch.core.configuration.xml.JobParserJobFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]"
+2016-04-22 18:20:16.964 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6d23017e: defining beans [jobRepository,transactionManager,jobLauncher,systemDataSource,targetDataSource,org.springframework.jdbc.datasource.init.DataSourceInitializer#0,checkFileTask,createFileTask,continueTask,org.springframework.batch.core.scope.internalStepScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,initialization-step,createFileStep,continue-step,robust-export]; root of factory hierarchy"
+2016-04-22 18:20:16.999 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: org.hsqldb.jdbcDriver"
+2016-04-22 18:20:17.261 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "No TaskExecutor has been set, defaulting to synchronous executor."
+2016-04-22 18:20:17.263 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: com.mysql.jdbc.Driver"
+2016-04-22 18:20:17.709 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql]"
+2016-04-22 18:20:17.715 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql] in 5 ms."
+2016-04-22 18:20:17.715 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql]"
+2016-04-22 18:20:17.727 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql] in 12 ms."
+2016-04-22 18:20:17.907 [INFO ] com.zaxxer.hikari.HikariDataSource "springHikariCP - Started."
+2016-04-22 18:20:46.330 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "Job: [FlowJob: [name=robust-export]] launched with the following parameters: [{date=1461324046226, maxThread=2}]"
+2016-04-22 18:20:46.363 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:20:48.895 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:23:15.071 [WARN ] com.zaxxer.hikari.pool.PoolBase "springHikariCP - Failed to validate connection com.mysql.jdbc.JDBC4Connection@7dd78a1c (Communications link failure
+
+The last packet successfully received from the server was 113,869 milliseconds ago.  The last packet sent successfully to the server was 33 milliseconds ago.)"
+2016-04-22 18:24:21.606 [WARN ] com.zaxxer.hikari.pool.PoolBase "springHikariCP - Failed to validate connection com.mysql.jdbc.JDBC4Connection@2c42100b (Communications link failure
+
+The last packet successfully received from the server was 45,822 milliseconds ago.  The last packet sent successfully to the server was 1 milliseconds ago.)"
+2016-04-22 18:24:38.546 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [continue-step]"
+2016-04-22 18:24:38.714 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [initialization-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:38.719 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:24:38.998 [WARN ] com.zaxxer.hikari.pool.PoolBase "springHikariCP - Failed to validate connection com.mysql.jdbc.JDBC4Connection@3bbf6abe (Communications link failure
+
+The last packet successfully received from the server was 227,483 milliseconds ago.  The last packet sent successfully to the server was 1 milliseconds ago.)"
+2016-04-22 18:24:39.235 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [createFileStep] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:39.249 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:24:42.801 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [continue-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:42.807 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [continue-step]"
+2016-04-22 18:24:42.837 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [initialization-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:42.845 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:24:43.322 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [createFileStep] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:43.337 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:24:43.682 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [continue-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:43.690 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [continue-step]"
+2016-04-22 18:24:43.722 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [initialization-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:43.731 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:24:44.257 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [createFileStep] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:44.272 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:24:44.435 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [continue-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:44.452 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [continue-step]"
+2016-04-22 18:24:44.476 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [initialization-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:44.487 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:24:45.000 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [createFileStep] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:45.007 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:24:45.190 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [continue-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:45.202 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [continue-step]"
+2016-04-22 18:24:45.226 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [initialization-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:45.237 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:24:45.584 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [createFileStep] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:45.590 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:24:45.757 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [continue-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:45.766 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [continue-step]"
+2016-04-22 18:24:45.787 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [initialization-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:45.791 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:24:46.158 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [createFileStep] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:46.167 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:24:46.336 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [continue-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:46.343 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [continue-step]"
+2016-04-22 18:24:46.359 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [initialization-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:46.369 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:24:46.697 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [createFileStep] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:46.708 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:24:46.965 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [continue-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:46.970 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [continue-step]"
+2016-04-22 18:24:46.987 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [initialization-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:46.992 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:24:47.490 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [createFileStep] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:47.498 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:24:47.674 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [continue-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:47.682 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [continue-step]"
+2016-04-22 18:24:47.703 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [initialization-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:47.718 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:24:48.173 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [createFileStep] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:48.180 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:24:48.369 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [continue-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:48.376 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [continue-step]"
+2016-04-22 18:24:48.391 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [initialization-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:48.394 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:24:48.784 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [createFileStep] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:48.801 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:24:48.976 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [continue-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:48.985 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [continue-step]"
+2016-04-22 18:24:49.005 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [initialization-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:49.009 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:24:49.517 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [createFileStep] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:49.523 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:24:49.679 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [continue-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:49.685 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [continue-step]"
+2016-04-22 18:24:49.699 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [initialization-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:24:49.708 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:28:47.608 [INFO ] org.springframework.context.support.ClassPathXmlApplicationContext "Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@50f6ac94: startup date [Fri Apr 22 18:28:47 WIB 2016]; root of context hierarchy"
+2016-04-22 18:28:47.676 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [job-definition.xml]"
+2016-04-22 18:28:47.888 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [context.xml]"
+2016-04-22 18:28:47.937 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [database.xml]"
+2016-04-22 18:28:47.973 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'transactionManager': replacing [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context.xml]] with [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [database.xml]]"
+2016-04-22 18:28:48.051 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'robust-export': replacing [Generic bean: class [org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.batch.core.configuration.xml.JobParserJobFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]"
+2016-04-22 18:28:48.332 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@767e20cf: defining beans [jobRepository,transactionManager,jobLauncher,systemDataSource,targetDataSource,org.springframework.jdbc.datasource.init.DataSourceInitializer#0,checkFileTask,createFileTask,continueTask,org.springframework.batch.core.scope.internalStepScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,initialization-step,createFileStep,continue-step,robust-export]; root of factory hierarchy"
+2016-04-22 18:28:48.394 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: org.hsqldb.jdbcDriver"
+2016-04-22 18:28:48.763 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "No TaskExecutor has been set, defaulting to synchronous executor."
+2016-04-22 18:28:48.765 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: com.mysql.jdbc.Driver"
+2016-04-22 18:28:49.427 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql]"
+2016-04-22 18:28:49.438 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql] in 10 ms."
+2016-04-22 18:28:49.438 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql]"
+2016-04-22 18:28:49.448 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql] in 10 ms."
+2016-04-22 18:28:49.673 [INFO ] com.zaxxer.hikari.HikariDataSource "springHikariCP - Started."
+2016-04-22 18:28:54.170 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "Job: [FlowJob: [name=robust-export]] launched with the following parameters: [{date=1461324534054, maxThread=2}]"
+2016-04-22 18:28:54.208 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:29:01.339 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:31:13.614 [WARN ] com.zaxxer.hikari.pool.PoolBase "springHikariCP - Failed to validate connection com.mysql.jdbc.JDBC4Connection@90ede04 (Communications link failure
+
+The last packet successfully received from the server was 102,582 milliseconds ago.  The last packet sent successfully to the server was 25 milliseconds ago.)"
+2016-04-22 18:34:15.563 [INFO ] org.springframework.context.support.ClassPathXmlApplicationContext "Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3e2055d6: startup date [Fri Apr 22 18:34:15 WIB 2016]; root of context hierarchy"
+2016-04-22 18:34:15.619 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [job-definition.xml]"
+2016-04-22 18:34:15.753 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [context.xml]"
+2016-04-22 18:34:15.797 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [database.xml]"
+2016-04-22 18:34:15.842 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'transactionManager': replacing [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context.xml]] with [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [database.xml]]"
+2016-04-22 18:34:15.901 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'robust-export': replacing [Generic bean: class [org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.batch.core.configuration.xml.JobParserJobFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]"
+2016-04-22 18:34:16.115 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7cbc3762: defining beans [jobRepository,transactionManager,jobLauncher,systemDataSource,targetDataSource,org.springframework.jdbc.datasource.init.DataSourceInitializer#0,checkFileTask,createFileTask,continueTask,org.springframework.batch.core.scope.internalStepScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,initialization-step,createFileStep,continue-step,robust-export]; root of factory hierarchy"
+2016-04-22 18:34:16.144 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: org.hsqldb.jdbcDriver"
+2016-04-22 18:34:16.423 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "No TaskExecutor has been set, defaulting to synchronous executor."
+2016-04-22 18:34:16.425 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: com.mysql.jdbc.Driver"
+2016-04-22 18:34:16.838 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql]"
+2016-04-22 18:34:16.842 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql] in 4 ms."
+2016-04-22 18:34:16.842 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql]"
+2016-04-22 18:34:16.853 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql] in 10 ms."
+2016-04-22 18:34:16.988 [INFO ] com.zaxxer.hikari.HikariDataSource "springHikariCP - Started."
+2016-04-22 18:35:01.323 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "Job: [FlowJob: [name=robust-export]] launched with the following parameters: [{date=1461324900670, maxThread=2}]"
+2016-04-22 18:35:01.405 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:35:05.232 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:35:06.104 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [continue-step]"
+2016-04-22 18:35:06.152 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [initialization-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:35:06.164 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:35:08.949 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [createFileStep] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:35:08.958 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:35:09.611 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [continue-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:35:09.624 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [continue-step]"
+2016-04-22 18:35:09.656 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [initialization-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:35:09.669 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:35:11.121 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [createFileStep] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:35:11.131 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:35:11.789 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [continue-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:35:11.798 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [continue-step]"
+2016-04-22 18:35:11.829 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Duplicate step [initialization-step] detected in execution of job=[robust-export]. If either step fails, both will be executed again on restart."
+2016-04-22 18:35:11.840 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:35:47.745 [INFO ] org.springframework.context.support.ClassPathXmlApplicationContext "Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3e2055d6: startup date [Fri Apr 22 18:35:47 WIB 2016]; root of context hierarchy"
+2016-04-22 18:35:47.799 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [job-definition.xml]"
+2016-04-22 18:35:47.937 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [context.xml]"
+2016-04-22 18:35:47.975 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [database.xml]"
+2016-04-22 18:35:48.006 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'transactionManager': replacing [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context.xml]] with [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [database.xml]]"
+2016-04-22 18:35:48.109 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'robust-export': replacing [Generic bean: class [org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.batch.core.configuration.xml.JobParserJobFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]"
+2016-04-22 18:35:48.302 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6d23017e: defining beans [jobRepository,transactionManager,jobLauncher,systemDataSource,targetDataSource,org.springframework.jdbc.datasource.init.DataSourceInitializer#0,checkFileTask,createFileTask,continueTask,org.springframework.batch.core.scope.internalStepScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,initialization-step,createFileStep,continue-step,robust-export]; root of factory hierarchy"
+2016-04-22 18:35:48.337 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: org.hsqldb.jdbcDriver"
+2016-04-22 18:35:48.590 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "No TaskExecutor has been set, defaulting to synchronous executor."
+2016-04-22 18:35:48.592 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: com.mysql.jdbc.Driver"
+2016-04-22 18:35:49.138 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql]"
+2016-04-22 18:35:49.142 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql] in 4 ms."
+2016-04-22 18:35:49.143 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql]"
+2016-04-22 18:35:49.161 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql] in 18 ms."
+2016-04-22 18:35:49.349 [INFO ] com.zaxxer.hikari.HikariDataSource "springHikariCP - Started."
+2016-04-22 18:47:39.246 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "Job: [FlowJob: [name=robust-export]] launched with the following parameters: [{date=1461325658615, maxThread=2}]"
+2016-04-22 18:47:39.342 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:47:49.432 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:48:30.127 [INFO ] org.springframework.context.support.ClassPathXmlApplicationContext "Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3e2055d6: startup date [Fri Apr 22 18:48:30 WIB 2016]; root of context hierarchy"
+2016-04-22 18:48:30.187 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [job-definition.xml]"
+2016-04-22 18:48:30.363 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [context.xml]"
+2016-04-22 18:48:30.432 [INFO ] org.springframework.beans.factory.xml.XmlBeanDefinitionReader "Loading XML bean definitions from class path resource [database.xml]"
+2016-04-22 18:48:30.463 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'transactionManager': replacing [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [context.xml]] with [Generic bean: class [org.springframework.batch.support.transaction.ResourcelessTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [database.xml]]"
+2016-04-22 18:48:30.516 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Overriding bean definition for bean 'robust-export': replacing [Generic bean: class [org.springframework.batch.core.configuration.xml.SimpleFlowFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.batch.core.configuration.xml.JobParserJobFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]"
+2016-04-22 18:48:30.692 [INFO ] org.springframework.beans.factory.support.DefaultListableBeanFactory "Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7cbc3762: defining beans [jobRepository,transactionManager,jobLauncher,systemDataSource,targetDataSource,org.springframework.jdbc.datasource.init.DataSourceInitializer#0,checkFileTask,createFileTask,continueTask,org.springframework.batch.core.scope.internalStepScope,org.springframework.beans.factory.config.CustomEditorConfigurer,org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor,initialization-step,createFileStep,continue-step,robust-export]; root of factory hierarchy"
+2016-04-22 18:48:30.729 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: org.hsqldb.jdbcDriver"
+2016-04-22 18:48:30.972 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "No TaskExecutor has been set, defaulting to synchronous executor."
+2016-04-22 18:48:30.975 [INFO ] org.springframework.jdbc.datasource.DriverManagerDataSource "Loaded JDBC driver: com.mysql.jdbc.Driver"
+2016-04-22 18:48:31.361 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql]"
+2016-04-22 18:48:31.367 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-drop-hsqldb.sql] in 6 ms."
+2016-04-22 18:48:31.367 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql]"
+2016-04-22 18:48:31.378 [INFO ] org.springframework.jdbc.datasource.init.ResourceDatabasePopulator "Done executing SQL script from class path resource [org/springframework/batch/core/schema-hsqldb.sql] in 11 ms."
+2016-04-22 18:48:31.520 [INFO ] com.zaxxer.hikari.HikariDataSource "springHikariCP - Started."
+2016-04-22 18:48:36.008 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "Job: [FlowJob: [name=robust-export]] launched with the following parameters: [{date=1461325715944, maxThread=2}]"
+2016-04-22 18:48:36.036 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [initialization-step]"
+2016-04-22 18:48:37.741 [INFO ] org.springframework.batch.core.job.SimpleStepHandler "Executing step: [createFileStep]"
+2016-04-22 18:50:24.505 [ERROR] org.springframework.batch.core.step.AbstractStep "Encountered an error executing the step"
+com.google.gson.JsonSyntaxException: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Unterminated object at line 1 column 85 path $.serviceValue
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_60]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_60]
+	at java.util.concurrent.ForkJoinTask.getThrowableException(ForkJoinTask.java:593) ~[?:1.8.0_60]
+	at java.util.concurrent.ForkJoinTask.reportException(ForkJoinTask.java:677) ~[?:1.8.0_60]
+	at java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:735) ~[?:1.8.0_60]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateParallel(ForEachOps.java:158) ~[?:1.8.0_60]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateParallel(ForEachOps.java:174) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233) ~[?:1.8.0_60]
+	at java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:423) ~[?:1.8.0_60]
+	at java.util.stream.ReferencePipeline$Head.forEachOrdered(ReferencePipeline.java:593) ~[?:1.8.0_60]
+	at com.numazu.export.task.CreateFileTask.createFile(CreateFileTask.java:129) ~[bin/:?]
+	at com.numazu.export.task.CreateFileTask.checkStepRunning(CreateFileTask.java:73) ~[bin/:?]
+	at com.numazu.export.task.CreateFileTask.execute(CreateFileTask.java:61) ~[bin/:?]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:395) ~[spring-batch-core-2.2.0.RELEASE.jar:?]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130) ~[spring-tx-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:267) ~[spring-batch-core-2.2.0.RELEASE.jar:?]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:77) ~[spring-batch-core-2.2.0.RELEASE.jar:?]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:368) ~[spring-batch-infrastructure-2.2.0.RELEASE.jar:?]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-2.2.0.RELEASE.jar:?]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144) ~[spring-batch-infrastructure-2.2.0.RELEASE.jar:?]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:253) ~[spring-batch-core-2.2.0.RELEASE.jar:?]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:195) [spring-batch-core-2.2.0.RELEASE.jar:?]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137) [spring-batch-core-2.2.0.RELEASE.jar:?]
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64) [spring-batch-core-2.2.0.RELEASE.jar:?]
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60) [spring-batch-core-2.2.0.RELEASE.jar:?]
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152) [spring-batch-core-2.2.0.RELEASE.jar:?]
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131) [spring-batch-core-2.2.0.RELEASE.jar:?]
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135) [spring-batch-core-2.2.0.RELEASE.jar:?]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301) [spring-batch-core-2.2.0.RELEASE.jar:?]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134) [spring-batch-core-2.2.0.RELEASE.jar:?]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48) [spring-core-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127) [spring-batch-core-2.2.0.RELEASE.jar:?]
+	at com.numazu.export.Application.runJob(Application.java:88) [bin/:?]
+	at com.numazu.export.Application.main(Application.java:38) [bin/:?]
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Unterminated object at line 1 column 85 path $.serviceValue
+	at com.google.gson.Gson.fromJson(Gson.java:876) ~[gson-2.5.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:826) ~[gson-2.5.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:775) ~[gson-2.5.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:747) ~[gson-2.5.jar:?]
+	at com.numazu.export.task.MessagingTask.sendPush(MessagingTask.java:89) ~[bin/:?]
+	at com.numazu.export.task.CreateFileTask.doLoopSendToJms2(CreateFileTask.java:193) ~[bin/:?]
+	at com.numazu.export.task.CreateFileTask.lambda$1(CreateFileTask.java:129) ~[bin/:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:1.8.0_60]
+	at java.util.stream.Nodes$ArrayNode.forEach(Nodes.java:684) ~[?:1.8.0_60]
+	at java.util.stream.ForEachOps$ForEachOrderedTask.onCompletion(ForEachOps.java:490) ~[?:1.8.0_60]
+	at java.util.concurrent.CountedCompleter.tryComplete(CountedCompleter.java:577) ~[?:1.8.0_60]
+	at java.util.stream.ForEachOps$ForEachOrderedTask.onCompletion(ForEachOps.java:505) ~[?:1.8.0_60]
+	at java.util.concurrent.CountedCompleter.tryComplete(CountedCompleter.java:577) ~[?:1.8.0_60]
+	at java.util.stream.ForEachOps$ForEachOrderedTask.doCompute(ForEachOps.java:483) ~[?:1.8.0_60]
+	at java.util.stream.ForEachOps$ForEachOrderedTask.compute(ForEachOps.java:400) ~[?:1.8.0_60]
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731) ~[?:1.8.0_60]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[?:1.8.0_60]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.execLocalTasks(ForkJoinPool.java:1040) ~[?:1.8.0_60]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1058) ~[?:1.8.0_60]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[?:1.8.0_60]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) ~[?:1.8.0_60]
+Caused by: com.google.gson.stream.MalformedJsonException: Unterminated object at line 1 column 85 path $.serviceValue
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1574) ~[gson-2.5.jar:?]
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:495) ~[gson-2.5.jar:?]
+	at com.google.gson.stream.JsonReader.hasNext(JsonReader.java:418) ~[gson-2.5.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:211) ~[gson-2.5.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:861) ~[gson-2.5.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:826) ~[gson-2.5.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:775) ~[gson-2.5.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:747) ~[gson-2.5.jar:?]
+	at com.numazu.export.task.MessagingTask.sendPush(MessagingTask.java:89) ~[bin/:?]
+	at com.numazu.export.task.CreateFileTask.doLoopSendToJms2(CreateFileTask.java:193) ~[bin/:?]
+	at com.numazu.export.task.CreateFileTask.lambda$1(CreateFileTask.java:129) ~[bin/:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:1.8.0_60]
+	at java.util.stream.Nodes$ArrayNode.forEach(Nodes.java:684) ~[?:1.8.0_60]
+	at java.util.stream.ForEachOps$ForEachOrderedTask.onCompletion(ForEachOps.java:490) ~[?:1.8.0_60]
+	at java.util.concurrent.CountedCompleter.tryComplete(CountedCompleter.java:577) ~[?:1.8.0_60]
+	at java.util.stream.ForEachOps$ForEachOrderedTask.onCompletion(ForEachOps.java:505) ~[?:1.8.0_60]
+	at java.util.concurrent.CountedCompleter.tryComplete(CountedCompleter.java:577) ~[?:1.8.0_60]
+	at java.util.stream.ForEachOps$ForEachOrderedTask.doCompute(ForEachOps.java:483) ~[?:1.8.0_60]
+	at java.util.stream.ForEachOps$ForEachOrderedTask.compute(ForEachOps.java:400) ~[?:1.8.0_60]
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731) ~[?:1.8.0_60]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[?:1.8.0_60]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.execLocalTasks(ForkJoinPool.java:1040) ~[?:1.8.0_60]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1058) ~[?:1.8.0_60]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[?:1.8.0_60]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) ~[?:1.8.0_60]
+2016-04-22 18:50:24.566 [INFO ] org.springframework.batch.core.launch.support.SimpleJobLauncher "Job: [FlowJob: [name=robust-export]] completed with the following parameters: [{date=1461325715944, maxThread=2}] and the following status: [FAILED]"
+2016-04-22 18:50:24.566 [INFO ] com.numazu.export.Application "Exit status Servisis = FAILED"

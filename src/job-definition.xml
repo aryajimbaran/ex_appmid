@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:batch="http://www.springframework.org/schema/batch" xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/batch
+		http://www.springframework.org/schema/batch/spring-batch-2.2.xsd
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/task
+        http://www.springframework.org/schema/task/spring-task-3.2.xsd">
+
+	<import resource="context.xml" />
+	<import resource="database.xml" />
+	
+	<bean id="checkFileTask" class="com.numazu.export.task.CheckFileTask"></bean>
+	<bean id="createFileTask" class="com.numazu.export.task.CreateFileTask"></bean>
+	<bean id="continueTask" class="com.numazu.export.task.ContinueTask"></bean>
+	
+	<batch:job id="robust-export" >
+		<batch:step id="initialization-step" next="createFileStep" >
+			<batch:tasklet ref="checkFileTask"/>
+		</batch:step>
+		
+		<batch:step id="createFileStep" next="continue-step">
+			<batch:tasklet ref="createFileTask"/>
+		</batch:step>
+		
+		<batch:step id="continue-step" next="initialization-step" >
+			<batch:tasklet ref="continueTask"/>
+		</batch:step>
+		
+	</batch:job>
+	
+	
+
+</beans>
